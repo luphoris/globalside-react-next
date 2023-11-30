@@ -6,14 +6,25 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      roboto: ["Roboto", "sans-serif"],
+    theme: {
+      fontFamily: {
+        'roboto': ["Roboto", "sans-serif"],
+        'roboto-bold': ["Roboto", "sans-serif"],
+      },
+      fontWeight: {
+        normal: "400",
+        bold: "700",
+      },
     },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        'mockup-blue': "#1DA1F2",
       },
     },
   },

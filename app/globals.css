@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -27,9 +27,24 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 html,
-body,
-label {
+header body {
   font-family: "Roboto", sans-serif;
 }
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: theme("colors.mockup-blue");
+}
+
+/* H3 ELEMENT HAS NO BOLD WEIGHT */
