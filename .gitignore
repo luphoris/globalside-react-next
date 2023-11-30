@@ -8,6 +8,7 @@
 
 # testing
 /coverage
+/public/reactNextExercise.json
 
 # next.js
 /.next/
